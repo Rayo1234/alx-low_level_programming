@@ -1,0 +1,5 @@
+#!/bin/bash
+main.c=$CFILE
+main.s=${main%.c}.s
+gcc -S -masm=intel $main.c -o $main.s
+
