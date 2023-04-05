@@ -12,7 +12,7 @@ void _print_rev_recursion(char *s)
 		putchar('\n');
 		return;
 		--s;
-		_print_rev_recursion("\ns + 1");
+		_print_rev_recursion("s + 1,\n");
 		putchar(*s);
 	}
 }
