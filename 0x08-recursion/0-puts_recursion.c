@@ -2,8 +2,7 @@
 
 /**
  * _puts_recursion - used to get fibbonnocia
- * s: is a character
- * void: is the library
+ * @s: is a character void: is the library
  * Return: 0
  */
 void _puts_recursion(char *s)
@@ -12,12 +11,7 @@ void _puts_recursion(char *s)
 	{	putchar('\n');
 		return;
 	}
-		putchar(*s);
+		putchar (*s);
 		_puts_recursion(s + 1);
-
-	{
-		char str[] = "Puts with recursion";
-		_puts_recursion(str);
-	}
 	return;
 }
