@@ -4,24 +4,29 @@
 
 /**
  * _strdup - allocates memory
- * @*str: is a string
- *
+ * @str: is a string
  * Return: NULL
  */
 
 char *_strdup(char *str)
 {
+	char *bb;
+	int i;
+
+	int p = 0;
+
 	if (str == NULL)
-	{
 		return (NULL);
-	}
 
-	char *dup_str = (char *) malloc(strlen(strlen(str) + 1);
-			if (dup_str == NULL)
-		{
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	bb = malloc(sizeof(char) * (1 + i));
+
+			if (bb == NULL)
 			return (NULL);
-		}
-		strcpy(dup_str, str);
 
-		return (dup_str);
+		for (p = 0; str[p]; p++)
+			bb[p] = str[p];
+		return (bb);
 }
