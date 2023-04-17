@@ -6,9 +6,9 @@
  *
  * Return: 0
  */
-int main()
+int main(void)
 {
-	const char* file_name = __FILE__;
+	const char *file_name = __FILE__;
 
 	while (*file_name)
 	{
