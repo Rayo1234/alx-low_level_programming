@@ -18,6 +18,6 @@ int main(void)
 	while (*p)
 		putchar(*p++);
 
-	return(EXIT_SUCCESS);
+	return (EXIT_SUCCESS);
 
 }
