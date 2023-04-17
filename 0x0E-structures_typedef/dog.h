@@ -8,12 +8,13 @@
  * @owner: third member
  * Return: 0
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
+
 
 #endif
 
